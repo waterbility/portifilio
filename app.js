@@ -27,10 +27,30 @@ prev.addEventListener("click", () => {
   grid3.classList.toggle("prev");
 });
 
+// about page 
+
+const header = document.querySelector("#what");
+const text = document.querySelectorAll(".links");
+const nav = document.querySelector(".nav")
+const body = document.querySelector("header")
+
+const observerOptions = {
+  threshold: 0,
+  rootMargin: ""
+};
+
+
+const headerObserver = new IntersectionObserver(function(entries, headerObserver){
+entries.forEach(entry => {
+console.log(entry.target);
+if (!entry.isIntersecting) {
+  nav.style.backgroundColor = "white";
+} else {
+  
+}
+});
+}, observerOptions)
 
 
 
-
-
-
-
+headerObserver.observe(header);

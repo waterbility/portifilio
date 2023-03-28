@@ -18,12 +18,13 @@ body{
 
 header{
     display: flex;
-    
+    position:absolute;
+    margin-top: -10vh;
 }
 .logo-about{
     width: 8rem;
     height: 8rem;
-   margin:2vh 0vh 0vw 3vw;
+   margin: -8vh 0vh 0vw 3vw;
    border: blueviolet 3px solid;
     border-radius: 50%;
   position: fixed;
@@ -49,9 +50,7 @@ header{
       transform: translate(0.7rem, 3rem);
        } 
 
-.nav{
-    margin-top: 5vh;
-}
+
 
  .nav ul{
     margin-left: 45vw;
@@ -61,13 +60,13 @@ header{
 
 .nav ul li{
     display: inline-block; 
-    margin-left: 7vw;   margin-top: 5vw;
+    margin-left: 7vw;   
 }
 
        .nav ul li a{
     text-decoration: none;  text-align: left; font-weight: 700;
     list-style: none;   position: fixed;    
-    color: rgb(255, 248, 248); 
+    color: rgb(255, 248, 248);     
     padding: 2rem; font-size: 1rem;   text-transform: uppercase;
     
 }
@@ -91,7 +90,7 @@ header{
         height: auto;
         display: flex;
         justify-content: space-evenly;
-        margin-top:2rem;
+        margin-top:4rem;
         margin-left:2vw;
        }
 
